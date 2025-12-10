@@ -1,5 +1,7 @@
 @import "tailwindcss";
-
+*{
+    scroll-behavior: smooth;
+}
 .Jet {
     font-family: 'JetBrains Mono';
 }
@@ -14,20 +16,45 @@
     background-color: white;
     top: 0;
     right: 0;
-    width: 40%;
+    width: 35%;
     height: 2px;
 }
 
 .arrow-end::after {
     content: '';
     position: absolute;
-    /* background-color: red; */
     border-color: white;
     border-style: solid;
     border-width: 2px 2px 0 0;
     top: 50%;
     right: 0;
-    transform: translateY(-55%) rotateZ(45deg);
-    width: 12px;
-    height: 12px;
+    transform: translate(-5%, -65%) rotateZ(45deg);
+    width: 10px;
+    height: 10px;
 }   
+.arrow-start::before {
+    content: '';
+    position: absolute;
+    background-color: white;
+    top: 0;
+    left: 0;
+    width: 35%;
+    height: 2px;
+}
+
+.arrow-start::after {
+    content: '';
+    position: absolute;
+    border-color: white;
+    border-style: solid;
+    border-width: 0 0 2px 2px;
+    top: 50%;
+    left: 0;
+    transform: translateY(-65%) rotateZ(45deg);
+    width: 10px;
+    height: 10px;
+}   
+
+.pin-spacer{
+    pointer-events: none;
+}
