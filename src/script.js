@@ -34,15 +34,31 @@ gsap.from('.switch', {
 gsap.from('h1, h2',{
     y: -20,
     duration: 0.3,
-    stagger: 0.2,
     opacity: 0,
 })
 
+
+// gsap.utils.toArray("h1, h2").forEach(el => {
+
+//   gsap.from(el, {
+//     y: -20,
+//     opacity: 0,
+//     duration: 0.3,
+//     stagger: 0.2,
+//     scrollTrigger: {
+//       trigger: el,
+//       start: "top 75%"
+//     }
+//   });
+
+// });
+
+
 gsap.from(".perspective-animation",
-    {
-        rotateX: 80,     // lying down
-        y: -50,          // pushed downward
+    { 
         opacity: 0,
+        rotateX: 80,     // lying down
+        y: -50,           // pushed upward
         transformOrigin: "center bottom",
         duration: 0.5,
         delay: 0.3, 
