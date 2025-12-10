@@ -265,6 +265,9 @@
   .block {
     display: block;
   }
+  .hidden {
+    display: none;
+  }
   .h-auto {
     height: auto;
   }
@@ -463,6 +466,19 @@
 }
 .pin-spacer {
   pointer-events: none;
+}
+* {
+  ::-webkit-scrollbar {
+    width: 3px;
+    height: 0px;
+  }
+  ::-webkit-scrollbar-track {
+    background: rgb(0, 0, 0);
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #ffffff;
+    border-radius: 43px;
+  }
 }
 @property --tw-translate-x {
   syntax: "*";
