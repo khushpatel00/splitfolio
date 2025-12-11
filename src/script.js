@@ -9,6 +9,8 @@ gsap.from('.bannerred', {
     opacity: 0,
     stagger: 1,
 })
+
+
 gsap.from('img', {
     top: '50%', 
     left: '50%',
