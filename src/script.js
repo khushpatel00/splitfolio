@@ -1,8 +1,15 @@
 gsap.registerPlugin(ScrollToPlugin);
 gsap.set(".bannerred", { perspective: 800 });
 gsap.set(".perspective-animation", { display: 'block' });
-gsap.set("img", { display: 'block' });
+gsap.set(".icon", { display: 'block' });
 gsap.set(".switch", { display: 'block' });
+setTimeout(() => {
+
+    gsap.to(window, {
+        scrollTo: 'body',
+        duration: 0.1,
+    })
+}, 0)
 
 gsap.from('.bannerred', {
     y: -20,
@@ -12,7 +19,7 @@ gsap.from('.bannerred', {
 })
 
 
-gsap.from('img', {
+gsap.from('.icon', {
     top: '50%',
     left: '50%',
     opacity: -0.1,
@@ -79,10 +86,10 @@ function scrolltoAbout() {
     gsap.to(window, {
         scrollTo: "#about",
         duration: 1,
-        ease: "expo.out"
+        ease: "power4.out"
     });
 }
 
-document.querySelector('#scrolltoabout').addEventListener('click', ()=>{
+document.querySelector('#scrolltoabout').addEventListener('click', () => {
     scrolltoAbout();
 }, true)

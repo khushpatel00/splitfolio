@@ -28,6 +28,8 @@
     --text-3xl--line-height: calc(2.25 / 1.875);
     --text-4xl: 2.25rem;
     --text-4xl--line-height: calc(2.5 / 2.25);
+    --text-5xl: 3rem;
+    --text-5xl--line-height: 1;
     --font-weight-light: 300;
     --font-weight-bold: 700;
     --font-weight-extrabold: 800;
@@ -282,6 +284,9 @@
   .hidden {
     display: none;
   }
+  .table {
+    display: table;
+  }
   .aspect-square {
     aspect-ratio: 1 / 1;
   }
@@ -319,6 +324,12 @@
   }
   .cursor-pointer {
     cursor: pointer;
+  }
+  .cursor-text {
+    cursor: text;
+  }
+  .resize {
+    resize: both;
   }
   .flex-col {
     flex-direction: column;
@@ -436,6 +447,12 @@
   .text-end {
     text-align: end;
   }
+  .align-bottom {
+    vertical-align: bottom;
+  }
+  .align-top {
+    vertical-align: top;
+  }
   .text-2xl {
     font-size: var(--text-2xl);
     line-height: var(--tw-leading, var(--text-2xl--line-height));
@@ -447,6 +464,10 @@
   .text-4xl {
     font-size: var(--text-4xl);
     line-height: var(--tw-leading, var(--text-4xl--line-height));
+  }
+  .text-5xl {
+    font-size: var(--text-5xl);
+    line-height: var(--tw-leading, var(--text-5xl--line-height));
   }
   .text-lg {
     font-size: var(--text-lg);

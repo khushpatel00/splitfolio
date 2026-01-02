@@ -145,16 +145,13 @@ video:hover {
 	transition: 0.3s all;
 }
 
-/* 
-section:not(.keep){
+/* section:not(.keep){
 	display: none;
 
 } */
-
 .floaticon{
 	transition: 0.5s;
-	animation: floaticon 1.5s infinite;
-	
+	animation: floaticon 1.5s infinite;	
 }
 @keyframes floaticon {
 	0%{
