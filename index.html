@@ -15,13 +15,14 @@
 
     <link href="https://fonts.googleapis.com/css2?family=Noto+Color+Emoji&display=swap" rel="stylesheet">
 
+    <link rel="stylesheet" href="src/phosphor.css">
     <link rel="stylesheet" href="src/output.css">
 
 </head>
 
 <body class="bg-white dark:bg-neutral-900 Poppins">
 
-    <span class="fixed top-0 switch hidden right-0 rounded-bl-2xl bg-neutral-800 text-white">
+    <!-- <span class="fixed top-0 switch hidden right-0 rounded-bl-2xl bg-neutral-800 text-white">
         <div class="mt-5 mb-2 me-2 ms-3 cursor-pointer">
             <a href="gamedev.html" onclick="window.location(gamedev.html)">
 
@@ -29,7 +30,12 @@
                     too</span>
             </a>
         </div>
-    </span>
+    </span> -->
+    <div id="scrolltoabout"
+        class="absolute z-[9999] flex flex-col items-center justify-center text-neutral-700  bg-amber-200 bottom-0 right-0 -translate-1/2 w-auto h-auto aspect-square rounded-full">
+        <p class="text-center font-bold text-xl px-5">Scroll</p>
+        <i class="ph-bold ph-caret-double-down text-2xl floaticon"></i>
+    </div>
     <section class="h-screen max-w-screen bannerred relative pointer-events-none">
         <div class=" bg-amber-200 Jet absolute top-1/2 z-10 border border-neutral-700 left-1/2 -translate-1/2 perspective-animation none"
             style="display: none;">
@@ -123,31 +129,45 @@
 
         <div class="ps-10 ms-5 flex flex-wrap justify-around">
             <div class="video-wrapper cursor-pointer">
-                <a target="_blank" href="https://khushpatel00.github.io/portfolio-archived/Projects/CoffeeMarket/index.html">
+                <a target="_blank"
+                    href="https://khushpatel00.github.io/portfolio-archived/Projects/CoffeeMarket/index.html">
 
                     <p class="pinblock tracking-widest relative py-3">CoffeeMarket</p>
-                    <video src="src/clips/coffeemarketdemo.mp4" autoplay muted loop class="border me-2"></video>
+                    <div class="video-wrapper">
+                        <video src="src/clips/coffeemarketdemo.mp4" autoplay muted loop class="border me-2"></video>
+
+                    </div>
                 </a>
             </div>
             <div class="video-wrapper cursor-pointer">
                 <a target="_blank" href="https://khushpatel00.github.io/portfolio-archived/Projects/Nestify/index.html">
 
                     <p class="pinblock tracking-widest relative py-3">Nestify</p>
-                    <video src="src/clips/nestifydemo.mp4" autoplay muted loop class="border me-2"></video>
+                    <div class="video-wrapper">
+                        <video src="src/clips/nestifydemo.mp4" autoplay muted loop class="border me-2"></video>
+                    </div>
                 </a>
             </div>
             <div class="video-wrapper cursor-pointer">
-                <a target="_blank" href="https://khushpatel00.github.io/portfolio-archived/Projects/A2Z_Furnishing/index.html">
+                <a target="_blank"
+                    href="https://khushpatel00.github.io/portfolio-archived/Projects/A2Z_Furnishing/index.html">
 
                     <p class="pinblock tracking-widest relative py-3">A2Z Furnishing</p>
-                    <video src="src/clips/a2zdemo.mp4" autoplay muted loop class="border me-2"></video>
+
+                    <div class="video-wrapper">
+                        <video src="src/clips/a2zdemo.mp4" autoplay muted loop class="border me-2"></video>
+                    </div>
                 </a>
             </div>
             <div class="video-wrapper cursor-pointer">
                 <a target="_blank" href="https://khushpatel00.github.io/portfolio-archived/Projects/Dekoro/index.htmls">
 
                     <p class="pinblock tracking-widest relative py-3">Dekoro</p>
-                    <video src="src/clips/dekorodemo.mp4" autoplay muted loop class="border me-2"></video>
+
+                    <div class="video-wrapper">
+                        <video src="src/clips/dekorodemo.mp4" autoplay muted loop class="border me-2"></video>
+
+                    </div>
                 </a>
             </div>
         </div>
@@ -187,6 +207,7 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollTrigger.min.js"></script>
+    <script src="https://unpkg.com/gsap@3/dist/ScrollToPlugin.min.js"></script>
     <script src="src/script.js"></script>
 </body>
 
