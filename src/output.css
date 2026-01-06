@@ -745,7 +745,7 @@
 }
 video {
   max-height: 25vh;
-  transform: rotateX(0deg) scale(1) translateX(-2%);
+  transform: rotateX(0) scale(1) translateX(-2%);
   transition: 0.3s all;
   perspective: 900px;
   perspective-origin: bottom;
