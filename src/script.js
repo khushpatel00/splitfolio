@@ -86,7 +86,7 @@ function scrolltoAbout() {
     gsap.to(window, {
         scrollTo: "#about",
         duration: 1,
-        ease: "power4.out"
+        ease: "power4.in"
     });
 }
 
